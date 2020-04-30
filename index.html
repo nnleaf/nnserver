@@ -25,8 +25,8 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-								<li><a href="#projects" id="projects-link"><span class="icon solid fa-th">Projects</span></a></li>
-								<li><a href="#resume" id="resume-link"><span class="icon solid fa-user">Resume</span></a></li>
+								<li><a href="#projects" id="projects-link"><span class="icon solid fa-file">Projects</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -37,9 +37,10 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="https://www.nnserver.ca" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.nnserver.ca" class="icon solid fa-globe"><span class="label">Globe</span></a></li>
+							<li><a href="https://www.linkedin.com/in/nam-nguyen-14504266" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
 							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://blog.nnserver.ca" class="icon brands fa-wordpress-simple"><span class="label">Wordpress</span></a></li>
 							<li><a href="mailto:nn.hoang.nguyen@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
@@ -55,9 +56,7 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt"></br><strong>Nam Nguyen</strong>.</h2>
-								<p></br></br>I am passionate about technology, with an avid interest in Linux, security, and networking.</br></br>
-								</p>
+								<h2 class="home"><br><br><strong>Nam Nguyen.</strong><br><br><br></h2>
 							</header>
 
 						</div>
@@ -67,134 +66,164 @@
 					<section id="projects" class="two">
 						<div class="container">
 							<header>
-								<h2>Projects</h2>
+								<h2>Projects.</h2>
 							</header>
 								<div class="row">
 									<!--First Row-->
 									<div class="col-6 col-12-mobile">
+										<!--Homelab-->
 										<article class="item">
-											<a href="https://doc.nnserver.ca/shelves/nnserver" class="image fit"><img src="images/NNServer.jpg" alt="" /></a>
+											<div class="projecthover column">
+												<figure>	
+													<a href="https://doc.nnserver.ca/shelves/nnserver" class="image fit"><img src="images/NNServer.jpg" /></a>
+												</figure>
+  										</div>
 											<header>
-												<h3 style="font-size:larger ;line-height:normal ;">Homelab</h3>
-												<p style="font-size:small; line-height:normal;"><i>My pride and joy, my homelab is always a work in progress to self-host everything</i></p>
+												<h3 style="font-size:x-large ;line-height:normal ;">Homelab</h3>
+												<p style="font-size:smaller; line-height:normal;">
+													<strong>My pride and joy, my homelab is always a work in progress to
+													self-host everything.</strong></p>
 											</header>
 										</article>
+										<!--Website-->
 										<article class="item">
-											<a href="https://doc.nnserver.ca/books/homegenesis" class="image fit"><img src="images/MediaServer.jpg" alt="" /></a>
+											<div class="projecthover column">
+												<figure>
+													<a href="https://doc.nnserver.ca/books/webindex" class="image fit"><img src="images/nnserverwebsite.jpg" /></a>
+												</figure>
+  										</div>
 											<header>
-												<h3 style="font-size:larger ;line-height:normal ;">Media Server</h3>
-												<p style="font-size:x-small; line-height:normal; font-family:Helvetica, sans-serif;">
-													<i>I could no longer rely on streaming services to contain the media I desired, so I crafted a media 
-													server using Plex and a Sonarr, Radarr, SABnzb, Deluge stack to download and organize the media. It 
-													has allowed friends and family to stream high quality content to any device in or outside my home network.  </i></p>
+												<h3 style="font-size:x-large ;line-height:normal ;">Website</h3>
+												<p style="font-size:smaller; line-height:normal;">
+													<strong>This website is self-hosted, being built upon a LEMP (Linux, Nginx, MariaDB, 
+													PHP) stack, utilizes HTML5, and includes a documentation wiki with a blog.</strong></p>
 											</header>
 										</article>
-										
 									</div>
 									<!--Second Row-->
 									<div class="col-6 col-12-mobile">
+										<!--Bookstack-->
 										<article class="item">
-											<a href="https://doc.nnserver.ca/" class="image fit"><img src="images/BookStack.jpg" alt="" /></a>
+											<div class="projecthover column">
+												<figure>
+													<a href="https://doc.nnserver.ca/" class="image fit"><img src="images/BookStack.jpg" /></a>
+												</figure>
+  										</div>
 											<header>
-												<h3 style="font-size:larger ;line-height:normal ;">BookStack</h3>
-												<p style="font-size:x-small; line-height:normal; font-family:Helvetica, sans-serif;"><i>BookStack is a free and open source self-hosted wiki platform to organize and store
-													my personal documentation (plus cookbook!). </i> 
+												<h3 style="font-size:x-large ;line-height:normal ;">BookStack</h3>
+												<p style="font-size:smaller; line-height:normal;">
+													<strong>BookStack is a free and open source self-hosted wiki platform to organize
+													and store my personal documentation (plus cookbook!).</strong>
 												</p>
 											</header>
 										</article>
+										<!--Media Server-->
 										<article class="item">
-											<a href="https://doc.nnserver.ca/" class="image fit"><img src="images/.jpg" alt="" /></a>
+											<div class="projecthover column">
+												<figure>	
+													<a href="https://doc.nnserver.ca/books/homegenesis" class="image fit"><img src="images/MediaServer.jpg" /></a>
+												</figure>
+											</div>
 											<header>
-												<h3 style="font-size:larger ;line-height:normal ;">Website</h3>
-												<p style="font-size:x-small; line-height:normal; font-family:Helvetica, sans-serif;"><i>I self-host my own web server which includes this page, documentation wiki, and a blog</i></p>
+												<h3 style="font-size:x-large ;line-height:normal ;">Media Server</h3>
+												<p style="font-size:smaller; line-height:normal;">
+												  <strong>I could no longer rely on streaming services to contain the media I desired,
+													so I crafted a media server using Plex and a Sonarr, Radarr, SABnzb, Deluge
+													stack to download and organize the media. It has allowed friends and family 
+													to stream high quality content to any device in or outside my home network.</strong></p>
 											</header>
 										</article>
 									</div>
-									
-						
-									
 								</div>
-
-								<!--
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://doc.nnserver.ca/" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Bookstack</h3>
-										</header>
-									</article>
-
-
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>Dolor Penatibus</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article>
-								</div>
-								-->
-							
 						</div>
 					</section>
 
-				<!-- Resume -->
-					<section id="resume" class="three">
+				<!-- About Me -->
+					<section id="about" class="three">
 						<div class="container">
-
 							<header>
-								<h2>Resume</h2>
+								<h2>About Me.</h2>
 							</header>
-							<!--<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>-->
-							<p style="font-size:smaller">I am looking for a position on a team where I can develop and contribute my skills as an IT professional 
-								in a new opportunity to challenge myself. I believe I have a lot to offer in combining my passion for 
-								technology with my extensive customer service background.<br><br>
-							<h1>Skills</h1>
-							<p style="font-size:smaller">Debian Linux, Arch Linux, Windows 7-10, Server 2019, MacOS, Active Directory, Java, HTML, Bash scripting, 
-							CLI</p></p>
+							<div class="col-12 col-12-mobile"><p style="font-size:smaller; line-height:30px ;"><strong>
+								I am passionate about technology, with an avid interest in Linux, security, and networking, 
+								seeking a position on a team where I can develop and contribute my skills as an 
+								IT professional. I am always looking for a challenge and I have a lot to offer in combining my passion for 
+								technology with my extensive customer service background. <br></strong>
+							</div>
+							<div class="row">
+								<!--Left Side-->
+								<div class="col-8 col-12-mobile">
+									<h3 style="font-size:x-large ;line-height:normal ;">Experience</h3>
+									<p style="text-align:left ;font-size: smaller; line-height:25px ;">
+										<u>SunTel Technologies – Help Desk Level 1 Technician<br></u>
+										ConnectWise Manage, Automate, and Control to create, log, and resolve service tickets<br>
+										Supported Windows 7, 10 & Windows Server 2019 Active Directory<br>
+										Professional telephone etiquette during support calls<br><br>
+										<u>York University – ITSA Club – Technician</u><br>
+										Organized schedules for remote technical support meetings with RDP/LogMeIn/TeamViewer<br>
+										Troubleshooted software and hardware issues<br>
+										Budgeted and planned the hardware for a file server<br><br>
+										<u>Bangkok Garden – Bartender / Server<br></u>
+										Adding efficiency to the bar through careful placement of tools were paramount to my success<br>
+										Attention to accuracy, timing, and details to deliver superb customer service<br>
+									</strong></p>
+								</div>
+								<!--Right Side-->
+								<div class="col-4 col-12-mobile">
+									<h3 style="font-size:x-large ;line-height:normal ;">Skills</h3>
+										<p style="font-size:smaller; line-height:25px ;">
+											Diagnostics and Troubleshooting<br>
+											Detailed Logging and Documentation<br>
+											Bilingual - English and Vietnamese<br>
+											Debian Linux, Arch Linux<br>
+											Windows 7-10 Server 2019, Active Directory<br>
+											Java, HTML<br>
+											Bash, CLI
+										</p>
+									<h3 style="font-size:x-large ;line-height:normal ;">Education</h3>
+										<p style="font-size:smaller; line-height:25px ;">
+											York University</p>
+								</div>
+							</div>
 						</div>
 						<footer>
-							<a href="test.pdf" class="button">Resume</a>
+							<a href="test.pdf" class="button">PDF Resume</a>
 						</footer>
 					</section>
 
 				<!-- Contact -->
 					<section id="contact" class="four">
 						<div class="container">
-
 							<header>
-								<h2>Contact</h2>
+								<h2>Contact.</h2>
 							</header>
-							<p>I currently live in <a href="https://goo.gl/maps/RxWX9KSUZLxc2v1e7">Toronto, Ontario</a><br>
-								<a href="mailto:nn.hoang.nguyen@gmail.com">nn.hoang.nguyen@gmail.com</a></p>
 
+							<!-- Contact Information -->
+							<div class="row">
+								<div class="col-6 col-12-mobile">
+									<p style="text-align:center ;font-size:smaller; line-height:30px ;">
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="image avatarcircle"><img src="images/avatar.jpg" alt="" /></span>
+									</p>
+
+								</div>
+								<!-- Left Side -->
+								<div class="col-6 col-12-mobile">
+									<p style="text-align:left ;font-size:smaller; line-height:30px ;">
+										<strong>
+										<span class="icon solid fa-home"></span>
+										&nbsp;I currently live and work in 
+										<a href="https://goo.gl/maps/RxWX9KSUZLxc2v1e7"; style="text-decoration:none">Toronto, Ontario</a><br>
+										<span class="icon solid fa-envelope"></span>
+										<a href="mailto:nn.hoang.nguyen@gmail.com">&nbsp;nn.hoang.nguyen@gmail.com</a><br>
+										<span class="icon brands fa-linkedin"></span>
+										<a href="https://www.linkedin.com/in/nam-nguyen-14504266">&nbsp;Linkedin</a><br>
+										<span class="icon brands fa-wordpress"></span>
+										<a href="https://www.nnserver.ca">&nbsp;Home</a>
+										</strong>
+									</p>
+								</div>
+							</div>
+							<!-- Contact Form -->
 							<form method="post" action="https://formspree.io/xwkrelnj">
 								<div class="row">
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
@@ -203,7 +232,7 @@
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<input type="submit" value="Lets stay in touch!" />
 									</div>
 								</div>
 							</form>

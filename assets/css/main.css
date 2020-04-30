@@ -166,7 +166,6 @@ input, select, textarea {
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -175,7 +174,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: rgb(37, 110, 165);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -505,7 +504,7 @@ input, select, textarea {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 80px;
 				}
-
+/*
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.row {
@@ -750,7 +749,7 @@ input, select, textarea {
 						}
 
 		}
-
+*/
 		@media screen and (min-width: 961px) and (max-width: 1620px) {
 
 			.row {
@@ -1747,11 +1746,37 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+
+/*Project Area - Hover Zoom+Blur*/
+
+figure {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+	.projecthover figure img {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		-webkit-transition: .25s ease-in-out;
+		transition: .25s ease-in-out;
+	}
+		.projecthover figure:hover img {
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05);
+			-webkit-filter:blur(2.5px);
+			filter: blur(2.5px);
+			-webkit-filter:brightness(50%);
+			filter: brightness(50%);
+		}
+
+
 /* Image */
 
 	.image {
 		display: inline-block;
-		border: 0;
+		border: ;
 	}
 
 		.image.project {
@@ -1773,6 +1798,12 @@ input, select, textarea {
 			.image.avatar48 img {
 				width: 48px;
 				height: 48px;
+			}
+
+			.image.avatarcircle img {
+				width: 130px;
+				height: 130px;
+				-webkit-border-radius: 500px;
 			}
 
 		.image.fit {
@@ -2157,7 +2188,7 @@ input, select, textarea {
 				transition: none;
 			}
 
-				#nav ul li a span {
+				  #nav ul li a span {
 					position: relative;
 					display: block;
 					font-size: 0.8em;
@@ -2257,7 +2288,7 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
+				background-color: rgb(0, 0, 0);
 				background-image: url("../../images/banner.jpg");
 			}
 
