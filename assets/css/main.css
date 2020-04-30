@@ -1760,16 +1760,14 @@ figure {
 	.projecthover figure img {
 		-webkit-transform: scale(1);
 		transform: scale(1);
-		-webkit-transition: .25s ease-in-out;
-		transition: .25s ease-in-out;
+		-webkit-transition: .40s ease-in-out;
+		transition: .40s ease-in-out;
 	}
 		.projecthover figure:hover img {
 			-webkit-transform: scale(1.05);
 			transform: scale(1.05);
-			-webkit-filter:blur(2.5px);
-			filter: blur(2.5px);
-			-webkit-filter:brightness(50%);
-			filter: brightness(50%);
+			-webkit-filter:blur(2.5px) brightness(60%);
+			filter: blur(2.5px) brightness(60%);
 		}
 
 
