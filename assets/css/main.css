@@ -1,11 +1,7 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 /*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -129,6 +125,11 @@ input, select, textarea {
 		font-size: 2em;
 		letter-spacing: -1px;
 	}
+
+		h2.home{
+			font-size: 3em;
+			font-weight: bold;
+		}
 
 		h2.alt {
 			color: #888;
@@ -453,7 +454,7 @@ input, select, textarea {
 				.row.gtr-50.gtr-uniform > * {
 					padding-top: 20px;
 				}
-
+				
 		.row {
 			margin-top: -40px;
 			margin-left: -40px;
@@ -504,7 +505,7 @@ input, select, textarea {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 80px;
 				}
-/*
+
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.row {
@@ -749,7 +750,7 @@ input, select, textarea {
 						}
 
 		}
-*/
+
 		@media screen and (min-width: 961px) and (max-width: 1620px) {
 
 			.row {
@@ -1801,8 +1802,8 @@ figure {
 			}
 
 			.image.avatarcircle img {
-				width: 130px;
-				height: 130px;
+				width: 170px;
+				height: 170px;
 				-webkit-border-radius: 500px;
 			}
 
@@ -1874,6 +1875,44 @@ figure {
 			border: 0;
 		}
 
+/* Labeled Icons 
+	 Added for Icons to the left of Contact alignment*/
+
+ul.labeled-icons {
+	list-style: none;
+	padding: 0;
+}
+
+	ul.labeled-icons li {
+		line-height: 1.5em;
+		margin: .3em 0 0 0;
+		padding-left: 1.5em;
+		position: relative;
+		text-align:left;
+		font-size:smaller;
+		
+	}
+
+		ul.labeled-icons li:first-child {
+			margin-top: 0;
+		}
+
+		ul.labeled-icons li a {
+			color: inherit;
+		}
+
+		ul.labeled-icons li h6 {
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 1em;
+		}
+
+		ul.labeled-icons li:hover {
+			color: rgb(37, 110, 165);
+		}
+
 /* Form */
 
 	form label {
@@ -1881,11 +1920,31 @@ figure {
 		text-align: left;
 		margin-bottom: 0.5em;
 	}
+	
 
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
 	form select,
+
+	form textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: #f7f7f7;
+		border-radius: 0.35em;
+		border: solid 2px transparent;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 0.75em;
+		text-decoration: none;
+		width: 100%;
+		font-size: large;
+	}
+
+	/*
 	form textarea {
 		position: relative;
 		-webkit-appearance: none;
@@ -1903,46 +1962,52 @@ figure {
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
 		transition: all 0.35s ease-in-out;
-	}
+	}*/
 
 		form input[type="text"]:focus,
 		form input[type="email"]:focus,
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0 0 2px 1px #8ebebc;
-			background: #fff;
+			box-shadow: 0 0 2px 1px rgb(71, 102, 128);;
+			background: rgba(255, 255, 255, 0.795);
+			opacity: 1.0;
 		}
 
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
 	form select {
-		line-height: 1.25em;
+		line-height: 2em;
 	}
 
 	form textarea {
-		min-height: 14em;
+		min-height: 7em;
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: #b2b2b2 !important;
+		opacity: 1.0;
 	}
 
 	form :-moz-placeholder {
-		color: #555 !important;
+		color: #b2b2b2 !important;
+		opacity: 1.0;
 	}
 
 	form ::-moz-placeholder {
-		color: #555 !important;
+		color: #b2b2b2 !important;
+		opacity: 1.0;
 	}
 
 	form :-ms-input-placeholder {
-		color: #555 !important;
+		color: #b2b2b2 !important;
+		opacity: 1.0;
 	}
 
 	form ::-moz-focus-inner {
 		border: 0;
+		opacity: 1.0;
 	}
 
 /* Table */
@@ -1983,12 +2048,13 @@ figure {
 	input[type="reset"],
 	button,
 	.button {
+		font-size: 20px;
 		position: relative;
 		display: inline-block;
 		border-radius: 0.35em;
-		color: #fff !important;
+		color: rgb(236, 236, 236) !important;
 		text-decoration: none;
-		padding: 0.75em 2.5em 0.75em 2.5em;
+		padding: 0.5em 2em 0.5em 2em;
 		background-color: rgb(32, 44, 53);
 		border: 0;
 		cursor: pointer;
@@ -2034,6 +2100,10 @@ figure {
 
 			.item header h3 {
 				font-size: 1em;
+			}
+
+			.item header p{
+				padding: 0 .8em 0 .8em;
 			}
 
 /* Icons */
