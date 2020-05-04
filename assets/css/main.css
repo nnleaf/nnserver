@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: rgb(37, 110, 165);
+			color: rgb(34, 47, 56);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1775,7 +1775,6 @@ figure {
 
 	.image {
 		display: inline-block;
-		border: ;
 	}
 
 		.image.project {
@@ -1886,7 +1885,7 @@ ul.labeled-icons {
 		margin: .3em 0 0 0;
 		padding-left: 1.5em;
 		position: relative;
-		text-align:left;
+		text-align: left;
 		font-size:smaller;
 		
 	}
@@ -1908,7 +1907,7 @@ ul.labeled-icons {
 		}
 
 		ul.labeled-icons li:hover {
-			color: rgb(37, 110, 165);
+			color: rgb(34, 47, 56);
 		}
 
 /* Form */
@@ -2086,7 +2085,7 @@ ul.labeled-icons {
 
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 
 		.item header {
@@ -2155,8 +2154,8 @@ ul.labeled-icons {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
-		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+		background: #1a1a1a;
+		box-shadow: inset -0.3em 0 0.3em 0 rgba(0, 0, 0, 0.16);
 		color: #fff;
 		height: 100%;
 		left: 0;
@@ -2164,7 +2163,7 @@ ul.labeled-icons {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 375px;
+		width: 250px;
 	}
 
 		#header .top {
@@ -2200,7 +2199,7 @@ ul.labeled-icons {
 			}
 
 				#header .icons a:hover {
-					color: rgb(37, 110, 165);
+					color: rgb(34, 47, 56);
 				}
 
 	#logo {
@@ -2244,6 +2243,9 @@ ul.labeled-icons {
 		}
 
 			#nav ul li a {
+				font-size: .8em;
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
 				display: block;
 				padding: 0.5em 1.5em 0.5em 1.5em;
 				color: rgba(255, 255, 255, 0.5);
@@ -2257,6 +2259,7 @@ ul.labeled-icons {
 			}
 
 				  #nav ul li a span {
+					padding-right: 2.25em;
 					position: relative;
 					display: block;
 					font-size: 0.8em;
@@ -2264,11 +2267,12 @@ ul.labeled-icons {
 
 					#nav ul li a span:before {
 						position: absolute;
-						left: 0;
+						left: 100%;
 						color: #41484c;
 						text-align: center;
 						width: 1.25em;
-						line-height: 1.75em;
+						margin-left: -1.25em;
+						line-height: 2.25em;
 					}
 
 				#nav ul li a.active {
@@ -2278,16 +2282,16 @@ ul.labeled-icons {
 				}
 
 					#nav ul li a.active span:before {
-						color: rgb(37, 110, 165);
+						color: rgb(34, 47, 56);
 					}
-
+		
 /* Footer */
 
 	#footer {
-		margin-left: 375px;
+		margin-left: 250px;
 		text-align: center;
 		background-color: #dce3e2;
-		padding: 3em 0 4em 0;
+		padding: 2em 0 2em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
 	}
@@ -2314,7 +2318,7 @@ ul.labeled-icons {
 /* Main */
 
 	#main {
-		margin-left: 375px;
+		margin-left: 250px;
 	}
 
 		#main > section {
@@ -2323,7 +2327,6 @@ ul.labeled-icons {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
 		}
 
 			#main > section.dark {
@@ -2379,25 +2382,54 @@ ul.labeled-icons {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 17pt;
+				font-size: 16pt;
 			}
 
-		/* Header */
-
-			#header {
-				width: 300px;
+			.container {
+				padding: 0 2em 0 2em;
 			}
 
-		/* Footer */
+		/* Icons */
 
-			#footer {
-				margin-left: 300px;
+			ul.icons li a {
+				width: 1.75em;
 			}
 
-		/* Main */
+	/* Item */
 
-			#main {
-				margin-left: 300px;
+		.item {
+			margin-bottom: 20px;
+		}
+
+		#logo .image {
+			position: relative;
+			margin: 0 0 0.5em 0;
+		}
+
+		#nav ul li a {
+			font-size: 0.8em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+
+			#nav ul li a span {
+				padding-right: 2.25em;
+			}
+
+				#nav ul li a span:before {
+					left: 100%;
+					margin-left: -1.25em;
+					line-height: 2.25em;
+				}
+
+	/* Main */
+
+			#main > section {
+				padding: 3em 0;
+			}
+
+			#main section.cover {
+				padding: 5em 0;
 			}
 
 	}
@@ -2405,6 +2437,49 @@ ul.labeled-icons {
 /* Normal */
 
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
+
+		/* Basic */
+
+			body, input, textarea, select {
+				font-size: 16pt;
+			}
+
+			.container {
+				padding: 0 2em 0 2em;
+			}
+
+		/* Icons */
+
+			ul.icons li a {
+				width: 1.75em;
+			}
+
+		/* Item */
+
+			.item {
+				margin-bottom: 20px;
+			}
+
+			#logo .image {
+				position: relative;
+				margin: 0 0 0.5em 0;
+			}
+
+			#nav ul li a {
+				font-size: 0.8em;
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+			}
+
+				#nav ul li a span {
+					padding-right: 2.25em;
+				}
+
+					#nav ul li a span:before {
+						left: 100%;
+						margin-left: -1.25em;
+						line-height: 2.25em;
+					}
 
 		/* Main */
 
@@ -2415,7 +2490,6 @@ ul.labeled-icons {
 			#main section.cover {
 				padding: 5em 0;
 			}
-
 	}
 
 /* Narrow */
@@ -2500,7 +2574,7 @@ ul.labeled-icons {
 			}
 
 			body, input, textarea, select {
-				font-size: 16pt;
+				font-size: 15pt;
 			}
 
 			header br {
@@ -2520,7 +2594,7 @@ ul.labeled-icons {
 		/* Icons */
 
 			ul.icons a {
-				width: 1.75em;
+				width: 1.5em;
 				font-size: 1.25em;
 			}
 
@@ -2531,10 +2605,10 @@ ul.labeled-icons {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateX(-275px);
-				-webkit-transform: translateX(-275px);
-				-ms-transform: translateX(-275px);
-				transform: translateX(-275px);
+				-moz-transform: translateX(-150px);
+				-webkit-transform: translateX(-150px);
+				-ms-transform: translateX(-150px);
+				transform: translateX(-150px);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
@@ -2546,10 +2620,10 @@ ul.labeled-icons {
 				overflow-y: auto;
 				position: fixed;
 				top: 0;
-				width: 275px;
+				width: 150px;
 				z-index: 10002;
-				width: 275px;
-				background: #222729 url("images/overlay.png");
+				width: 150px;
+				background: #0e1113f8 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -2558,6 +2632,7 @@ ul.labeled-icons {
 				}
 
 				#header .bottom {
+					font-size: .8em;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
 					padding-top: 2em;
@@ -2633,17 +2708,17 @@ ul.labeled-icons {
 					}
 
 			body.header-visible #main {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(150px);
+				-webkit-transform: translateX(150px);
+				-ms-transform: translateX(150px);
+				transform: translateX(150px);
 			}
 
 			body.header-visible #headerToggle {
-				-moz-transform: translateX(275px);
-				-webkit-transform: translateX(275px);
-				-ms-transform: translateX(275px);
-				transform: translateX(275px);
+				-moz-transform: translateX(150px);
+				-webkit-transform: translateX(150px);
+				-ms-transform: translateX(150px);
+				transform: translateX(150px);
 			}
 
 			body.header-visible #header {
@@ -2674,12 +2749,13 @@ ul.labeled-icons {
 				margin-left: 0;
 			}
 
+
 				#main > section {
 					padding: 3em 0;
 				}
 
 				#main section.cover {
-					padding: 4em 0;
+					padding: 5em 0;
 				}
 
 	}
@@ -2689,6 +2765,29 @@ ul.labeled-icons {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+
+			#header {
+				-moz-transform: translateX(-130px);
+				-webkit-transform: translateX(-130px);
+				-ms-transform: translateX(-130px);
+				transform: translateX(-130px);
+				width: 130px;
+				width: 130px;
+			}
+
+			body.header-visible #main {
+				-moz-transform: translateX(130px);
+				-webkit-transform: translateX(130px);
+				-ms-transform: translateX(130px);
+				transform: translateX(130px);
+			}
+
+			body.header-visible #headerToggle {
+				-moz-transform: translateX(130px);
+				-webkit-transform: translateX(130px);
+				-ms-transform: translateX(130px);
+				transform: translateX(130px);
+			}
 
 			body, input, textarea, select {
 				font-size: 14pt;
@@ -2707,7 +2806,7 @@ ul.labeled-icons {
 		/* List */
 
 			ul.icons a {
-				width: 2em;
+				width: 1.5em;
 				font-size: 1.25em;
 			}
 
