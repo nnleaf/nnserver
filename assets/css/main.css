@@ -1801,6 +1801,7 @@ figure {
 			.image.avatarcircle img {
 				width: 170px;
 				height: 170px;
+				border-radius: 500px;
 				-webkit-border-radius: 500px;
 			}
 
