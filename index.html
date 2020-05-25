@@ -38,8 +38,8 @@
 					<!-- Social Icons - Max 4 to fit mobile view-->
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/nam-nguyen-14504266" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://blog.nnserver.ca" class="icon brands fa-wordpress-simple"><span class="label">Wordpress</span></a></li>
+							<li><a href="https://github.com/nnleaf/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<!--<li><a href="https://blog.nnserver.ca" class="icon brands fa-wordpress-simple"><span class="label">Wordpress</span></a></li>-->
 							<li><a href="mailto:nn.hoang.nguyen@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 
@@ -78,7 +78,7 @@
 												</figure>
   										</div>
 											<header>
-												<h3 style="font-size:x-large ;line-height:normal ;">Homelab</h3>
+												<h3 style="font-size:24px ;line-height:normal ;">Homelab</h3>
 												<p style="font-size:smaller; line-height:normal;">
 													My pride and joy, my homelab is always a work in progress to
 													self-host everything from my website to backups.</p>
@@ -92,10 +92,27 @@
 												</figure>
   										</div>
 											<header>
-												<h3 style="font-size:x-large ;line-height:normal ;">Website</h3>
+												<h3 style="font-size:24px ;line-height:normal ;">Website</h3>
 												<p style="font-size:smaller; line-height:normal;">
 													This website is self-hosted, built by HTML5 and CSS, on top of a LEMP (Linux, Nginx, MariaDB, 
 													PHP) stack, and includes a documentation wiki with a blog.</p>
+											</header>
+										</article>
+										<!--Media Server-->
+										<article class="item">
+											<div class="projecthover column">
+												<figure>	
+													<a href="https://doc.nnserver.ca/books/homegenesis" class="image fit"><img src="images/MediaServer.jpg" /></a>
+												</figure>
+											</div>
+											<header>
+												<h3 style="font-size:24px ;line-height:normal ;">Media Server</h3>
+												<p style="font-size:smaller; line-height:normal;">
+													No longer wanting to rely on streaming services,
+													I crafted a media server using Plex and a Sonarr, Radarr, SABnzb, Deluge
+													stack to download and organize the media. It has allowed friends and family 
+													to stream high quality content to any device in or outside my home network.
+												</p>
 											</header>
 										</article>
 									</div>
@@ -109,10 +126,25 @@
 												</figure>
 											</div>
 											<header>
-												<h3 style="font-size:x-large ;line-height:normal ;">Timeshift Script</h3>
+												<h3 style="font-size:24px ;line-height:normal ;">Timeshift Script</h3>
 												<p style="font-size:smaller; line-height:normal;">
 													A bash script written for the pacman package manager with a hook to automatically snapshot 
 													the system using Timeshift before any updates. Includes a configuration file.
+												</p>
+											</header>
+										</article>
+										<!--Automated Backups-->
+										<article class="item">
+											<div class="projecthover column">
+												<figure>	
+													<a href="https://doc.nnserver.ca/books/about/page/backup-philosophy" class="image fit"><img src="images/automatedbackups.jpg" /></a>
+												</figure>
+											</div>
+											<header>
+												<h3 style="font-size:24px ;line-height:normal ;">Automated Backups</h3>
+												<p style="font-size:smaller; line-height:normal;">
+													Following the 3-2-1 Backup Strategy, I utilized programs such as rsync, cronjobs, ghettoVCB, and bash/shell scripting
+													to design a fully automated backup system for my servers. It runs on a weekly and monthly schedule, fully logging any processes.
 												</p>
 											</header>
 										</article>
@@ -124,7 +156,7 @@
 												</figure>
   										</div>
 											<header>
-												<h3 style="font-size:x-large ;line-height:normal ;">BookStack</h3>
+												<h3 style="font-size:24px ;line-height:normal ;">BookStack</h3>
 												<p style="font-size:smaller; line-height:normal;">
 													A free and open source self-hosted wiki platform built on a 
 													LEMP (Linux, Nginx, MariaDB, PHP) stack allows me to organize and store my personal documentation
@@ -132,20 +164,19 @@
 												</p>
 											</header>
 										</article>
-										<!--Media Server-->
+										<!--Remote Server-->
 										<article class="item">
 											<div class="projecthover column">
-												<figure>	
-													<a href="https://doc.nnserver.ca/books/homegenesis" class="image fit"><img src="images/MediaServer.jpg" /></a>
+												<figure>
+													<a href="https://doc.nnserver.ca/books/nnx220/page/about" class="image fit"><img src="images/loading.png" /></a>
 												</figure>
-											</div>
+  										</div>
 											<header>
-												<h3 style="font-size:x-large ;line-height:normal ;">Media Server</h3>
+												<h3 style="font-size:24px ;line-height:normal ;">Remote Server</h3>
 												<p style="font-size:smaller; line-height:normal;">
-													No longer wanting to rely on streaming services,
-													I crafted a media server using Plex and a Sonarr, Radarr, SABnzb, Deluge
-													stack to download and organize the media. It has allowed friends and family 
-													to stream high quality content to any device in or outside my home network.
+													Using an old ThinkPad laptop, a Raspberry Pi, and a few network switches, it opens a secure WireGuard VPN tunnel to rsync scheduled 
+													cron scripts into a LVM LUKS encrypted backup drive for remote backups. It also serves as a Plex media server. It is still a work in 
+													progress. 
 												</p>
 											</header>
 										</article>
@@ -166,10 +197,10 @@
 								<div class="col-4 col-12-mobile">
 									<span class="image avatarcircle"><img src="images/avatar.jpg" alt="" /></span>
 								</div>
-								<div class="col-8 col-12-mobile"><p style="text-align:left ;font-size:smaller; line-height:30px ;"><strong>
-									Hi, my name is Nam Nguyen I have an avid interest in Linux, security, networking, and scripting. 
+								<div class="col-8 col-12-mobile"><p style="text-align:left ;font-size:smaller; line-height:30px ;">
+									Hi, my name is Nam Nguyen. I have an avid interest in Linux, security, networking, and automating. 
 									I combine my passion for technology with my extensive hospitality background to
-									provide exceptional customer service. I excel and work my hardest when a challenge is in front of me!<br></strong>
+									provide exceptional customer service. I excel and work my hardest when a challenge is in front of me!<br>
 								</div>
 						
 							</div>
@@ -177,34 +208,35 @@
 							<div class="row">
 								<!--Left Side-->
 								<div class="col-8 col-12-mobile">
-									<h3 style="font-size:x-large ;line-height:normal ;"><br>Experience</h3><hr style="height:0.5px; visibility:hidden;" />
+									<h3 style="font-size:larger ;line-height:normal ;"><br>Experience</h3><hr style="height:0.5px; visibility:hidden;" />
 									<p style="text-align:left ;font-size: small; line-height:25px ;">
 										<u><b>SunTel Technologies</b> – Help Desk Level 1 Technician<br></u>
 										ConnectWise Manage, Automate, and Control to create, log, and resolve service tickets<br>
 										Supported Windows 7, 10 & Windows Server 2019 Active Directory<br>
 										Professional telephone etiquette during support calls<br><br>
+										<u><b>Bangkok Garden</b> – Bartender / Server<br></u>
+										Adding efficiency to the bar through careful placement of tools were paramount to my success<br>
+										Attention to accuracy, timing, and details to deliver superb customer service<br><br>
 										<u><b>York University</b> – ITSA Club – Technician</u><br>
 										Organized schedules for remote technical support meetings with RDP/LogMeIn/TeamViewer<br>
 										Troubleshooted software and hardware issues<br>
 										Budgeted and planned the hardware for a file server<br><br>
-										<u><b>Bangkok Garden</b> – Bartender / Server<br></u>
-										Adding efficiency to the bar through careful placement of tools were paramount to my success<br>
-										Attention to accuracy, timing, and details to deliver superb customer service<br>
 									</strong></p>
 								</div>
 								<!--Right Side-->
 								<div class="col-4 col-12-mobile">
-									<h3 style="font-size:x-large ;line-height:normal ;"><br>Skills</h3><hr style="height:0.5px; visibility:hidden;" />
+									<h3 style="font-size:larger ;line-height:normal ;"><br>Skills</h3><hr style="height:0.5px; visibility:hidden;" />
 										<p style="font-size:small; line-height:25px ;">
-											Diagnostics and Troubleshooting<br>
-											Detailed Logging and Documentation<br>
-											Bilingual - English and Vietnamese<br>
 											Debian Linux, Arch Linux<br>
-											Windows 7-10 Server 2019, Active Directory<br>
+											Windows 7-10, Windows Server 2019, AD DS<br>
+											VMWare ESXi, PFSense, VPN, Nginx<br>
 											Java, HTML, CSS, Arduino<br>
-											Bash, CLI, Git
+											Bash/Shell, CLI, Git<br>
+											Bilingual - English and Vietnamese<br>
+											Diagnostics and Troubleshooting<br>
+											Detailed Logging and Documentation
 										</p>
-									<h3 style="font-size:x-large ;line-height:normal ;">Education</h3><hr style="height:0.5px; visibility:hidden;" />
+									<h3 style="font-size:larger ;line-height:normal ;">Education</h3><hr style="height:0.5px; visibility:hidden;" />
 										<p style="font-size:small; line-height:25px ;">
 											York University</p>
 								</div>
@@ -255,7 +287,7 @@
 										</li>
 										<li>
 											<h6 class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></h6>
-											<a href="https://linkedin.com/in/nnhoangnguyen/">Linkedin.com/in/nnhoangnguyen/</a>
+											<a href="https://linkedin.com/in/nnhoangnguyen/">Linkedin.com/in/nnhoangnguyen</a>
 										</li>
 										<li>
 											<h6 class="icon solid fa-envelope"><span class="label">Address</span></h6>
