@@ -25,7 +25,8 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-								<li><a href="#projects" id="projects-link"><span class="icon solid fa-file">Projects</span></a></li>
+								<li><a href="#work_projects" id="projects-link"><span class="icon solid fa-file">Work Projects</span></a></li>
+								<li><a href="#personal_projects" id="projects-link"><span class="icon solid fa-file">Personal Projects</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
@@ -61,12 +62,43 @@
 
 						</div>
 					</section>
-					
+				<!-- Work Projects -->
+				<section id="work_projects" class="two">
+					<div class="container">
+						<header>
+							<h2>Work Projects</h2>
+						</header>
+							<div class="row">
+								<!--First Row-->
+								<div class="col-6 col-12-mobile">
+									<!--NCRi - CentOS Thin Client-->
+									<article class="item">
+										<div class="projecthover column">
+											<figure>	
+												<a href="https://github.com/nnleaf/CentOS_ThinClient" class="image fit"><img src="images/CentOS.png" /></a>
+											</figure>
+										</div>
+										<header>
+											<h3 style="font-size:24px ;line-height:normal ;">NCRi - CentOS Thin Client</h3>
+											<p style="font-size:smaller; line-height:normal;">
+												My first project at NCRi, I was tasked with developing an efficient method to deploy Thin Clients for our staff. Due to compliance requirements, data could not leave our secure servers, so staff
+												needed to remote into Windows VM's. I utilized Kickstart to perform an agnostic and automated CentOS installation, which then started a BASH script to install and setup the final configuration.
+												By heavily optimizing CentOS for low-end hardware, it saved the company thousands of dollars buying powerful computers for each staff member.
+											</p>
+										</header>
+									</article>
+								</div>
+								<!--Second Row-->
+								<div class="col-6 col-12-mobile">
+								</div>
+							</div>
+					</div>
+				</section>
 				<!-- Projects -->
-					<section id="projects" class="two">
+					<section id="personal_projects" class="two">
 						<div class="container">
 							<header>
-								<h2>Projects</h2>
+								<h2>Personal Projects</h2>
 							</header>
 								<div class="row">
 									<!--First Row-->
@@ -138,7 +170,7 @@
 											</div>
 											<header>
 												<h3 style="font-size:24px ;line-height:normal ;">Remote Server</h3>
-												<p style="font-size:smaller; line-height:normal;">
+												<p style="font-size:x-small; line-height:normal;">
 													Using an old ThinkPad laptop, a Raspberry Pi, and a few network switches, it opens a secure WireGuard VPN tunnel to rsync scheduled 
 													cron scripts into a LVM LUKS encrypted backup drive for remote backups. It also serves as a Plex media server and an offline backup of BookStack with my documentation.
 												</p>
@@ -147,7 +179,7 @@
 									</div>
 									<!--Second Row-->
 									<div class="col-6 col-12-mobile">
-										<!--Timeshift Script-->
+										<!--Timeshift-->
 										<article class="item">
 											<div class="projecthover column">
 												<figure>	
@@ -155,7 +187,7 @@
 												</figure>
 											</div>
 											<header>
-												<h3 style="font-size:24px ;line-height:normal ;">Timeshift Script</h3>
+												<h3 style="font-size:30px ;line-height:normal ;">Timeshift Script</h3>
 												<p style="font-size:smaller; line-height:normal;">
 													A bash script written for the pacman package manager with a hook to automatically snapshot 
 													the system using Timeshift before any updates. Includes a configuration file.
@@ -254,6 +286,7 @@
 								<div class="col-8 col-12-mobile">
 									<h3 style="font-size:larger ;line-height:normal ;"><br>Experience</h3><hr style="height:0.5px; visibility:hidden;" />
 									<p style="text-align:left ;font-size: small; line-height:25px ;">
+										<u><b>NCRi</b> – System Administrator<br></u><br>
 										<u><b>Silverware POS</b> – Field Service Technician<br></u>
 										Leveraged my hospitality and IT experience to provide professional courtesy as the primary contact with clients<br>
 										Setup, troubleshoot, and supported systems running Win XP-10, Android, iOS, Ubiquiti UniFi, HP ProCurve, KDS, QSR, and Epson POS Printers<br>
@@ -295,7 +328,7 @@
 								<div class="col-4 col-12-mobile">
 									<h3 style=" ddfont-size:larger ;line-height:normal ;"><br>Skills</h3><hr style="height:0.5px; visibility:hidden;" />
 										<p style="font-size:small; line-height:25px ;">
-											Debian Linux, Arch Linux<br>
+											CentOS Linux, Debian Linux, Arch Linux<br>
 											Windows 7-10, Windows Server 2019, AD DS, SQL<br>
 											VMWare ESXi, PFSense, OpenVPN, WireGuard, Nginx, VLAN<br>
 											Java, HTML, CSS, Arduino<br>
